@@ -1,0 +1,97 @@
+/* Dark Professional Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Glassmorphism Effect */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #000000, #3b3b3b, #1a1a1a);
+    color: #f0f0f0;
+}
+
+/* Upload Profile Picture */
+.upload-label {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Profile Picture */
+#profilePicPreview, #previewProfilePic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+#profilePicPreview:hover, #previewProfilePic:hover {
+    transform: scale(1.1);
+}
+
+/* Input Fields */
+input, textarea, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Animated Button */
+.animated-button {
+    background: #ff1e56;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.animated-button:hover {
+    background: #e4003a;
+    transform: scale(1.05);
+}
+
+/* Portfolio Preview Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+/* Dark Mode Effects */
+.dark-mode .container, .dark-mode .profile-card {
+    background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="toggleTheme">🌙 Dark Mode</button>  
+
+    <div class="container">
+        <h1 class="fade-in">🚀 Professional Portfolio Builder</h1>
+
+        <div class="form-section">
+            <label for="profilePicInput" class="upload-label">📸 Upload Profile Picture</label>
+            <input type="file" id="profilePicInput" accept="image/*">
+            <img id="profilePicPreview" src="" alt="Profile Picture Preview">
+
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="text" id="title" placeholder="Your Title (e.g., Web Developer)">
+            <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+            <textarea id="projects" placeholder="Projects (comma separated)"></textarea>
+            <button class="animated-button" onclick="generatePortfolio()">🚀 Generate Portfolio</button>
+        </div>
+
+        <h2>📄 Portfolio Preview</h2>
+        <div class="portfolio-preview fade-in">
+            <div class="profile-card">
+                <img id="previewProfilePic" src="" alt="Profile Picture">
+                <h2 id="previewName">John Doe</h2>
+                <h3 id="previewTitle">Web Developer</h3>
+                <p><strong>Skills:</strong> <span id="previewSkills">HTML, CSS, JavaScript</span></p>
+                <p><strong>Projects:</strong> <span id="previewProjects">Portfolio Website, To-Do App</span></p>
+                <button class="animated-button" onclick="downloadPortfolio()">📥 Download Portfolio</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
